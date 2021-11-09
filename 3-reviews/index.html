@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+
+    <!-- font awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav__content">
+          <h4>Client Reviews</h4>
+        </div>
+      </div>
+    </nav>
+
+    <div class="title">
+      <h2>our reviews</h2>
+      <div class="underline"></div>
+    </div>
+
+    <!--* For Online Images : https://picsum.photos/ *-->
+    <main>
+      <div class="container main__content">
+        <div class="counter">1</div>
+        <article class="review">
+          <div class="image">
+            <img
+              src="https://picsum.photos/200?random=1"
+              loading="lazy"
+              alt="photo"
+              class="person-photo"
+            />
+          </div>
+          <h4 class="author">sara jones</h4>
+          <p class="job">UX Designer</p>
+          <p class="info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Reprehenderit doloribus eveniet adipisci itaque nisi animi, velit
+            doloremque placeat. Accusantium, reiciendis?
+          </p>
+        </article>
+        <div class="btns">
+          <button class="prev-btn btn">
+            <i class="fas fa-chevron-left"></i></button
+          ><button class="next-btn btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <button class="random-btn">Randome Reviews</button>
+      </div>
+    </main>
+
+    <script>
+      const reviews = [
+        {
+          id: "1",
+          name: "Qasem Ali",
+          job: "Web Develpoer",
+          imgUrl: "https://picsum.photos/200?random=1",
+          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Reprehenderit doloribus eveniet adipisci itaque nisi animi, velitdoloremque placeat. Accusantium, reiciendis?",
+        },
+        {
+          id: "2",
+          name: "susan smith",
+          job: "Web Develpoer",
+          imgUrl: "https://picsum.photos/200?random=2",
+          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Reprehenderit doloribus eveniet adipisci itaque nisi animi.",
+        },
+        {
+          id: "3",
+          name: "Osama Ahmad",
+          job: "Mobile Develpoer",
+          imgUrl: "https://picsum.photos/200?random=3",
+          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        },
+        {
+          id: "4",
+          name: "Bayan Ali",
+          job: "QA Develpoer",
+          imgUrl: "https://picsum.photos/200?random=4",
+          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit, Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        },
+        {
+          id: "5",
+          name: "Ibrahem Mousa Ahmad",
+          job: "Android Develpoer",
+          imgUrl: "https://picsum.photos/200?random=5",
+          text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit, Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        },
+        {
+          id: "6",
+          name: "Sara Jons",
+          job: "UX Designer",
+          imgUrl: "https://picsum.photos/200?random=6",
+          text: "adipisicing elit, Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        },
+      ];
+    </script>
+    <script src="js.js"></script>
+  </body>
+</html>
