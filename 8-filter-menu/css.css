@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.container {
+  margin: auto;
+  max-width: 1200px;
+  padding: 0 10x;
+  height: inherit;
+}
+
+.menu {
+  width: 100%;
+  background: #f7f7f7;
+}
+.menu__header h2 {
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 30px;
+}
+.menu__header {
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.btn {
+  background: none;
+  border: 1px solid rgb(238, 206, 22);
+  padding: 7px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+}
+.btn:hover,
+.btn:focus {
+  background: rgb(238, 206, 22);
+  color: #fff;
+}
+
+.menu__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu__card {
+  width: 450px;
+  margin: 10px;
+  height: 180px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.menu__card:hover {
+  background: #fff;
+}
+.card__image {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border: 2px solid gold;
+}
+img {
+  object-fit: cover;
+}
+.card__content {
+  display: flex;
+  justify-content: space-between;
+}
+.card__content__text {
+  padding: 10px;
+  width: 60%;
+}
+.content__head {
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 600;
+}
+.price {
+  color: rgb(235, 206, 45);
+  font-weight: bold;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #777;
+}
